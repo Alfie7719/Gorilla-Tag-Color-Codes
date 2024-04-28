@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorilla Tag Color Codes</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Icon.png">
+    <style>
+        html {
+            background-image: url('https://i.imgur.com/TqL0rd2.png');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            position: relative; /* Make it relative for absolute positioning of the button */
+        }
+
+        .color-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .color {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 50%; /* Make it circular */
+        }
+
+        #color-value {
+            margin-top: 20px;
+            font-weight: bold;
+            color: white; /* Set color to white */
+        }
+
+        /* Styling for the button */
+        .button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: linear-gradient(to bottom right, yellow, purple);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Button for Youtubers Color Codes -->
+    <button class="button" onclick="openPage()">Youtubers Color Codes</button>
+
+    <h1>Gorilla Tag Color Codes</h1>
+    <div class="color-container">
+        <!-- Color blocks... -->
+        <!-- First Row -->
+        <div class="color" style="background-color: rgb(0,0,0);" onclick="getColorValue(0,0,0)"></div>
+        <div class="color" style="background-color: rgb(28,28,28);" onclick="getColorValue(1,1,1)"></div>
+        <div class="color" style="background-color: rgb(57,57,57);" onclick="getColorValue(2,2,2)"></div>
+        <div class="color" style="background-color: rgb(85,85,85);" onclick="getColorValue(3,3,3)"></div>
+        <div class="color" style="background-color: rgb(113,113,113);" onclick="getColorValue(4,4,4)"></div>
+        <div class="color" style="background-color: rgb(142,142,142);" onclick="getColorValue(5,5,5)"></div>
+        <div class="color" style="background-color: rgb(170,170,170);" onclick="getColorValue(6,6,6)"></div>
+        <div class="color" style="background-color: rgb(198,198,198);" onclick="getColorValue(7,7,7)"></div>
+        <div class="color" style="background-color: rgb(227,227,227);" onclick="getColorValue(8,8,8)"></div>
+        <div class="color" style="background-color: rgb(255,255,255);" onclick="getColorValue(9,9,9)"></div>
+        <!-- Second Row -->
+        <div class="color" style="background-color: rgb(0,0,28);" onclick="getColorValue(0,0,1)"></div>
+        <div class="color" style="background-color: rgb(0,0,57);" onclick="getColorValue(0,0,2)"></div>
+        <div class="color" style="background-color: rgb(0,0,85);" onclick="getColorValue(0,0,3)"></div>
+        <div class="color" style="background-color: rgb(0,0,133);" onclick="getColorValue(0,0,4)"></div>
+        <div class="color" style="background-color: rgb(0,0,142);" onclick="getColorValue(0,0,5)"></div>
+        <div class="color" style="background-color: rgb(0,0,170);" onclick="getColorValue(0,0,6)"></div>
+        <div class="color" style="background-color: rgb(0,0,198);" onclick="getColorValue(0,0,7)"></div>
+        <div class="color" style="background-color: rgb(0,0,227);" onclick="getColorValue(0,0,8)"></div>
+        <div class="color" style="background-color: rgb(0,0,255);" onclick="getColorValue(0,0,9)"></div>
+        <div class="color" style="background-color: rgb(0,28,0);" onclick="getColorValue(0,1,0)"></div>
+        <div class="color" style="background-color: rgb(0,28,28);" onclick="getColorValue(0,1,1)"></div>
+        <div class="color" style="background-color: rgb(0,28,57);" onclick="getColorValue(0,1,2)"></div>
+        <div class="color" style="background-color: rgb(0,28,85);" onclick="getColorValue(0,1,3)"></div>
+        <div class="color" style="background-color: rgb(0,28,113);" onclick="getColorValue(0,1,4)"></div>
+        <div class="color" style="background-color: rgb(0,28,142);" onclick="getColorValue(0,1,5)"></div>
+        <div class="color" style="background-color: rgb(0,28,170);" onclick="getColorValue(0,1,6)"></div>
+        <div class="color" style="background-color: rgb(0,28,198);" onclick="getColorValue(0,1,7)"></div>
+        <div class="color" style="background-color: rgb(0,28,227);" onclick="getColorValue(0,1,8)"></div>
+        <div class="color" style="background-color: rgb(0,28,255);" onclick="getColorValue(0,1,9)"></div>
+        <div class="color" style="background-color: rgb(0,57,0);" onclick="getColorValue(0,2,0)"></div>
+        <div class="color" style="background-color: rgb(0,57,28);" onclick="getColorValue(0,2,1)"></div>
+        <div class="color" style="background-color: rgb(0,57,57);" onclick="getColorValue(0,2,2)"></div>
+        <div class="color" style="background-color: rgb(0,57,85);" onclick="getColorValue(0,2,3)"></div>
+        <div class="color" style="background-color: rgb(0,57,113);" onclick="getColorValue(0,2,4)"></div>
+        <div class="color" style="background-color: rgb(0,57,142);" onclick="getColorValue(0,2,5)"></div>
+        <div class="color" style="background-color: rgb(0,57,170);" onclick="getColorValue(0,2,6)"></div>
+        <div class="color" style="background-color: rgb(0,57,170);" onclick="getColorValue(0,2,6)"></div>
+    </div>
+    <div id="color-value"></div>
+    <script>
+        function openPage() {
+            window.location.href = 'Other.html'; // Replace 'Other.html' with the name of the HTML file you want to open
+        }
+
+        function getColorValue(r, g, b) {
+            document.getElementById("color-value").innerText = `Color Code: ${r}${g}${b}`;
+        }
+    </script>
+</body>
+</html>
